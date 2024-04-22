@@ -17,6 +17,7 @@ const ImagePreview = ({
   errorImageSource = images.errorImage,
   imageLoaderProps,
   renderImageLoader,
+  onPress,
 }: ImagePreviewProps) => {
   const {
     modalConfig,
@@ -47,7 +48,10 @@ const ImagePreview = ({
             />
           ) : (
             <TouchableOpacity
-              onPress={onPressImage}
+              onPress={() => {
+                onPress?.();
+                onPressImage();
+              }}
               style={[imageStyle, styles.imageParent]}
               disabled={error}>
               <Image

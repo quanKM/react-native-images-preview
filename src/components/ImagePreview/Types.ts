@@ -29,6 +29,7 @@ export type ImagePreviewProps = {
   errorImageSource?: ImageSourcePropType;
   renderHeader?: (close: () => void) => React.ReactElement;
   imageLoaderProps?: ActivityIndicatorProps;
+  onPress?: () => void;
 } & Pick<ImageLoaderProps, 'renderImageLoader'>;
 
 export type ImageModalProps = Omit<

@@ -1,6 +1,6 @@
 {
   "name": "react-native-images-preview",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A React Native animated custom images preview component.",
   "main": "lib/index",
   "types": "lib/index.d.ts",
